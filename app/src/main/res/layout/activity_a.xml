@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:text="Flag Quiz Game\nFrom XMF Developer\nTeacher:Ilhomjon Ibragimov\nHello I'm XMF and I'm glad to see yoo in my game but I want yoo to know it is not bad game it is important game for your intelligent for your brain ok let's describe my game: If you enter the game you will see beautiful design and you can enjoy listening music in the game ok after you should click to START and after that you will see 6 ways to play the game in each ways contains countries which belongs for them, and you can play game if you choose correct answer you can continue game breath deeply deeply run dance jump but please don't seat still ok? And play carefully if you are ready we are going to start our game so let's start the game.  "
+            android:textStyle="normal"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</ScrollView>

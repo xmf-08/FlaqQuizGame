@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img3"
+    android:id="@+id/tv_0"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flaq Quiz Game"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="65sp"
+        android:translationY="-30dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/card_Asia" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_Asia"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#FFC107"
+        app:layout_constraintRight_toLeftOf="@id/card_Europe"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/card_NorthAmerica"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <Button
+            android:id="@+id/btn_Asia"
+            android:backgroundTint="#FFFFC107"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Asia"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_Europe"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#FFC107"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/card_Asia"
+        app:layout_constraintBottom_toTopOf="@id/card_SouthAmerica"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <Button
+            android:id="@+id/btn_Europe"
+            android:backgroundTint="#FFC107"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Europe"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_NorthAmerica"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#FFC107"
+        app:layout_constraintRight_toLeftOf="@id/card_SouthAmerica"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/card_Africa"
+        app:layout_constraintTop_toBottomOf="@+id/card_Asia">
+
+        <Button
+            android:id="@+id/btn_NorthAmerica"
+            android:backgroundTint="#FFC107"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="North America"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_SouthAmerica"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#FFC107"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/card_Australia"
+        app:layout_constraintLeft_toRightOf="@id/card_NorthAmerica"
+        app:layout_constraintTop_toBottomOf="@+id/card_Europe">
+
+        <Button
+            android:id="@+id/btn_SouthAmerica"
+            android:backgroundTint="#FFC107"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="South America"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_Africa"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#FFC107"
+        app:layout_constraintRight_toLeftOf="@id/card_Australia"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_NorthAmerica">
+
+        <Button
+            android:id="@+id/btn_Africa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#FFC107"
+            android:text="Africa"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_Australia"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#FFC107"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/card_Africa"
+        app:layout_constraintTop_toBottomOf="@+id/card_SouthAmerica">
+
+        <Button
+            android:id="@+id/btn_Australia"
+            android:backgroundTint="#FFC107"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Australia"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
